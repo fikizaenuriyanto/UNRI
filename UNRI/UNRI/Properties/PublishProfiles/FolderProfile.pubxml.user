@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!--
+https://go.microsoft.com/fwlink/?LinkID=208121.
+-->
+<Project>
+  <PropertyGroup>
+    <TimeStampOfAssociatedLegacyPublishXmlFile />
+    <_PublishTargetUrl>C:\Users\vicky\Documents\UNRI\Publish</_PublishTargetUrl>
+    <History>True|2022-11-05T07:59:08.4738300Z;True|2022-10-25T16:08:54.3840630+07:00;True|2022-10-25T07:27:22.8592445+07:00;True|2022-09-29T16:25:52.1326500+07:00;</History>
+    <LastFailureDetails />
+  </PropertyGroup>
+  <ItemGroup>
+    <DestinationConnectionStrings Include="dbUNRI">
+      <Value>Persist Security Info=False%3bUser ID=sa%3bPassword=b1n4%40sehat%3bInitial Catalog=unri_db%3bServer=WIN-FAS7R217Q3F</Value>
+    </DestinationConnectionStrings>
+  </ItemGroup>
+</Project>

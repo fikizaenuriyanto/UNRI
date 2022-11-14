@@ -1,0 +1,156 @@
+is_global = true
+build_property.TargetFramework = net6.0
+build_property.TargetPlatformMinVersion = 
+build_property.UsingMicrosoftNETSdkWeb = true
+build_property.ProjectTypeGuids = 
+build_property.InvariantGlobalization = 
+build_property.PlatformNeutralAssembly = 
+build_property._SupportedPlatformList = Linux,macOS,Windows
+build_property.RootNamespace = UNRI
+build_property.RootNamespace = UNRI
+build_property.ProjectDir = C:\Users\vicky\Documents\UNRI\UNRI\
+build_property.RazorLangVersion = 6.0
+build_property.SupportLocalizedComponentNames = 
+build_property.GenerateRazorMetadataSourceChecksumAttributes = 
+build_property.MSBuildProjectDirectory = C:\Users\vicky\Documents\UNRI\UNRI
+build_property._RazorSourceGeneratorDebug = 
+
+[C:/Users/vicky/Documents/UNRI/UNRI/Views/Beranda/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQmVyYW5kYVxJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/vicky/Documents/UNRI/UNRI/Views/Fakultas/Created.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRmFrdWx0YXNcQ3JlYXRlZC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/vicky/Documents/UNRI/UNRI/Views/Fakultas/data_table.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRmFrdWx0YXNcZGF0YV90YWJsZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/vicky/Documents/UNRI/UNRI/Views/Fakultas/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRmFrdWx0YXNcSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/vicky/Documents/UNRI/UNRI/Views/Fakultas/Updated.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRmFrdWx0YXNcVXBkYXRlZC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/vicky/Documents/UNRI/UNRI/Views/Home/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/vicky/Documents/UNRI/UNRI/Views/Home/Privacy.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxQcml2YWN5LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/vicky/Documents/UNRI/UNRI/Views/Jabatan/Created.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSmFiYXRhblxDcmVhdGVkLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/vicky/Documents/UNRI/UNRI/Views/Jabatan/data_table.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSmFiYXRhblxkYXRhX3RhYmxlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/vicky/Documents/UNRI/UNRI/Views/Jabatan/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSmFiYXRhblxJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/vicky/Documents/UNRI/UNRI/Views/Jabatan/Updated.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSmFiYXRhblxVcGRhdGVkLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/vicky/Documents/UNRI/UNRI/Views/Jurusan/Created.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSnVydXNhblxDcmVhdGVkLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/vicky/Documents/UNRI/UNRI/Views/Jurusan/data_table.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSnVydXNhblxkYXRhX3RhYmxlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/vicky/Documents/UNRI/UNRI/Views/Jurusan/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSnVydXNhblxJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/vicky/Documents/UNRI/UNRI/Views/Jurusan/Updated.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSnVydXNhblxVcGRhdGVkLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/vicky/Documents/UNRI/UNRI/Views/Login/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTG9naW5cSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/vicky/Documents/UNRI/UNRI/Views/Pengguna/Created.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUGVuZ2d1bmFcQ3JlYXRlZC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/vicky/Documents/UNRI/UNRI/Views/Pengguna/data_table.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUGVuZ2d1bmFcZGF0YV90YWJsZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/vicky/Documents/UNRI/UNRI/Views/Pengguna/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUGVuZ2d1bmFcSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/vicky/Documents/UNRI/UNRI/Views/Pengguna/Updated.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUGVuZ2d1bmFcVXBkYXRlZC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/vicky/Documents/UNRI/UNRI/Views/Prodi/Created.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJvZGlcQ3JlYXRlZC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/vicky/Documents/UNRI/UNRI/Views/Prodi/data_table.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJvZGlcZGF0YV90YWJsZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/vicky/Documents/UNRI/UNRI/Views/Prodi/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJvZGlcSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/vicky/Documents/UNRI/UNRI/Views/Prodi/Updated.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJvZGlcVXBkYXRlZC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/vicky/Documents/UNRI/UNRI/Views/Shared/Error.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXEVycm9yLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/vicky/Documents/UNRI/UNRI/Views/Shared/_Admin_Layout.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9BZG1pbl9MYXlvdXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/vicky/Documents/UNRI/UNRI/Views/Shared/_Login_Layout.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9Mb2dpbl9MYXlvdXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/vicky/Documents/UNRI/UNRI/Views/Shared/_ValidationScriptsPartial.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/vicky/Documents/UNRI/UNRI/Views/UnitKerja/Created.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVW5pdEtlcmphXENyZWF0ZWQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/vicky/Documents/UNRI/UNRI/Views/UnitKerja/data_table.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVW5pdEtlcmphXGRhdGFfdGFibGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/vicky/Documents/UNRI/UNRI/Views/UnitKerja/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVW5pdEtlcmphXEluZGV4LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/vicky/Documents/UNRI/UNRI/Views/UnitKerja/Updated.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVW5pdEtlcmphXFVwZGF0ZWQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/vicky/Documents/UNRI/UNRI/Views/_ViewImports.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/vicky/Documents/UNRI/UNRI/Views/_ViewStart.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdTdGFydC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/vicky/Documents/UNRI/UNRI/Views/Shared/_Layout.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9MYXlvdXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = b-uzxobj6jx1

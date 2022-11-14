@@ -1,0 +1,114 @@
+﻿@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@{
+    Layout = "~/Views/Shared/_Admin_Layout.cshtml";
+}
+<!-- Content Header (Page header) -->
+<div class="content-header">
+    <div class="container-fluid">
+        <div class="row mb-2">
+            <div class="col-sm-6">
+                <h1 class="m-0">Data Master Fakultas</h1>
+            </div><!-- /.col -->
+            <div class="col-sm-6">
+                <ol class="breadcrumb float-sm-right">
+                    <li class="breadcrumb-item"><a href="@Url.Action("Index", "Beranda", null,null)">Home</a></li>
+                    <li class="breadcrumb-item active">Data Fakultas</li>
+                </ol>
+            </div><!-- /.col -->
+        </div><!-- /.row -->
+    </div>
+    <!-- /.container-fluid -->
+</div>
+<!-- /.content-header -->
+<!-- Main content -->
+<section class="content">
+    <div id="loadWeb"></div>
+</section>
+<!-- /.content -->
+
+<script type="text/javascript">
+    window.onload = function () {
+        loadORrefresh();
+    };
+
+    function ShowToast(toastType, toastMessage, toastTitle) {
+        toastr.clear();
+
+        toastr.options = {
+            closeButton: true,
+            progressBar: true,
+            onclick: null
+        };
+
+        toastr.options.showDuration = 300;
+        toastr.options.hideDuration = 1000;
+        toastr.options.timeOut = 5000;
+        toastr.options.extendedTimeOut = 1000;
+        toastr.options.showEasing = 'swing';
+        toastr.options.hideEasing = 'linear';
+        toastr.options.showMethod = 'fadeIn';
+        toastr.options.hideMethod = 'fadeOut';
+
+        var $toast = toastr[toastType](toastMessage, toastTitle); // Wire up an event handler to a button in the toast, if it exists
+        $toastlast = $toast;
+    }
+
+    function loadORrefresh() {
+        $.ajax({
+            type: "GET",
+            url: "/Fakultas/GetDataTable",
+            contentType: "application/json; charset=utf-8",
+            dataType: "html",
+            success: function (response) {
+                $('#loadWeb').html(response);
+            },
+            failure: function (response) {
+                alert(response.responseText);
+            },
+            error: function (response) {
+                alert(response.responseText);
+            }
+        });
+    }
+
+    function BukaCreated() {
+        $.ajax({
+            type: "GET",
+            url: "/Fakultas/OpenCreated",
+            contentType: "application/json; charset=utf-8",
+            dataType: "html",
+            success: function (response) {
+                $('#loadWeb').html(response);
+            },
+            failure: function (response) {
+                alert(response.responseText);
+            },
+            error: function (response) {
+                alert(response.responseText);
+            }
+        });
+    }
+
+    function GetAccount(v_idFakultas) {
+        $.ajax({
+            type: "GET",
+            url: "/Fakultas/OpenUpdated",
+            contentType: "application/json; charset=utf-8",
+            headers: {
+                'idFakultas': v_idFakultas
+            },
+            dataType: "html",
+            success: function (response) {
+                $('#loadWeb').html(response);
+            },
+            failure: function (response) {
+                alert(response.responseText);
+            },
+            error: function (response) {
+                alert(response.responseText);
+            }
+        });
+    }
+</script>

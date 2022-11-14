@@ -1,0 +1,178 @@
+﻿@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@{
+}
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+
+<!-- Google Font: Source Sans Pro -->
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700&display=fallback" />
+<!-- Font Awesome -->
+<link rel="stylesheet" href="~/AdminLTE-3.2.0/plugins/fontawesome-free/css/all.min.css" />
+<!-- Ionicons -->
+<link rel="stylesheet" href="https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css" />
+<!-- Tempusdominus Bootstrap 4 -->
+<link rel="stylesheet" href="~/AdminLTE-3.2.0/plugins/tempusdominus-bootstrap-4/css/tempusdominus-bootstrap-4.min.css" />
+<!-- iCheck -->
+<link rel="stylesheet" href="~/AdminLTE-3.2.0/plugins/icheck-bootstrap/icheck-bootstrap.min.css" />
+<!-- JQVMap -->
+<link rel="stylesheet" href="~/AdminLTE-3.2.0/plugins/jqvmap/jqvmap.min.css" />
+<!-- Theme style -->
+<link rel="stylesheet" href="~/AdminLTE-3.2.0/dist/css/adminlte.min.css" />
+<!-- overlayScrollbars -->
+<link rel="stylesheet" href="~/AdminLTE-3.2.0/plugins/overlayScrollbars/css/OverlayScrollbars.min.css" />
+<!-- Daterange picker -->
+<link rel="stylesheet" href="~/AdminLTE-3.2.0/plugins/daterangepicker/daterangepicker.css" />
+<!-- summernote -->
+<link rel="stylesheet" href="~/AdminLTE-3.2.0/plugins/summernote/summernote-bs4.min.css" />
+<!-- DataTables -->
+<link rel="stylesheet" href="~/AdminLTE-3.2.0/plugins/datatables-bs4/css/dataTables.bootstrap4.min.css" />
+<link rel="stylesheet" href="~/AdminLTE-3.2.0/plugins/datatables-responsive/css/responsive.bootstrap4.min.css" />
+<link rel="stylesheet" href="~/AdminLTE-3.2.0/plugins/datatables-buttons/css/buttons.bootstrap4.min.css" />
+<!-- Select2 -->
+<link rel="stylesheet" href="~/select2-4.1.0-rc.0/dist/css/select2.min.css" />
+<!-- Toast -->
+<link rel="stylesheet" href="~/Toast/build/toastr.css" type="text/css" />
+
+@model IEnumerable<UNRI.Models.wilayah_kerja.data_unit_kerja>
+
+<!-- Small boxes (Stat box) -->
+<div class="row">
+    <div class="col-12 col-12">
+        <table id="tabelView" class="table table-bordered table-striped">
+            <thead>
+                <tr>
+                    <th>Id Unit Kerja</th>
+                    <th>Nama Unit Kerja</th>
+                    <th>
+                        <button id="addAccounts" class="btn btn-info"
+                                onclick="BukaCreated()">
+                            Buat Unit Kerja Baru
+                        </button>
+                    </th>
+                </tr>
+            </thead>
+            <tbody>
+                @foreach (var _data in Model)
+                {
+                    <tr>
+                        <th>@_data.id_unit_kerja</th>
+                        <th>@_data.nm_unit_kerja</th>
+                        <th>
+                            <button id="editAccounts" class="btn btn-success"
+                                onclick="GetAccount('@_data.id_unit_kerja')">
+                                Edit
+                            </button>
+                            &ensp;
+                            <button id="delAccounts" class="btn btn-warning"
+                                onclick="DeletedData('@_data.id_unit_kerja')">
+                                Hapus
+                            </button>
+                        </th>
+                    </tr>
+                }
+            </tbody>
+        </table>
+    </div>
+    <!-- ./col -->
+</div>
+<!-- /.row -->
+<!-- jQuery -->
+<script src="~/AdminLTE-3.2.0/plugins/jquery/jquery.min.js"></script>
+<!-- jQuery UI 1.11.4 -->
+<script src="~/AdminLTE-3.2.0/plugins/jquery-ui/jquery-ui.min.js"></script>
+<!-- Resolve conflict in jQuery UI tooltip with Bootstrap tooltip -->
+<script>
+    $.widget.bridge('uibutton', $.ui.button)
+</script>
+<!-- Bootstrap 4 -->
+<script src="~/AdminLTE-3.2.0/plugins/bootstrap/js/bootstrap.bundle.min.js"></script>
+<!-- ChartJS -->
+<script src="~/AdminLTE-3.2.0/plugins/chart.js/Chart.min.js"></script>
+<!-- Sparkline -->
+<script src="~/AdminLTE-3.2.0/plugins/sparklines/sparkline.js"></script>
+<!-- JQVMap -->
+<script src="~/AdminLTE-3.2.0/plugins/jqvmap/jquery.vmap.min.js"></script>
+<script src="~/AdminLTE-3.2.0/plugins/jqvmap/maps/jquery.vmap.usa.js"></script>
+<!-- jQuery Knob Chart -->
+<script src="~/AdminLTE-3.2.0/plugins/jquery-knob/jquery.knob.min.js"></script>
+<!-- daterangepicker -->
+<script src="~/AdminLTE-3.2.0/plugins/moment/moment.min.js"></script>
+<script src="~/AdminLTE-3.2.0/plugins/daterangepicker/daterangepicker.js"></script>
+<!-- Tempusdominus Bootstrap 4 -->
+<script src="~/AdminLTE-3.2.0/plugins/tempusdominus-bootstrap-4/js/tempusdominus-bootstrap-4.min.js"></script>
+<!-- Summernote -->
+<script src="~/AdminLTE-3.2.0/plugins/summernote/summernote-bs4.min.js"></script>
+<!-- overlayScrollbars -->
+<script src="~/AdminLTE-3.2.0/plugins/overlayScrollbars/js/jquery.overlayScrollbars.min.js"></script>
+<!-- AdminLTE App -->
+<script src="~/AdminLTE-3.2.0/dist/js/adminlte.js"></script>
+<!-- AdminLTE for demo purposes -->
+<script src="~/AdminLTE-3.2.0/dist/js/demo.js"></script>
+<!-- AdminLTE dashboard demo (This is only for demo purposes) -->
+<script src="~/AdminLTE-3.2.0/dist/js/pages/dashboard.js"></script>
+<!-- DataTables  & Plugins -->
+<script src="~/AdminLTE-3.2.0/plugins/datatables/jquery.dataTables.min.js"></script>
+<script src="~/AdminLTE-3.2.0/plugins/datatables-bs4/js/dataTables.bootstrap4.min.js"></script>
+<script src="~/AdminLTE-3.2.0/plugins/datatables-responsive/js/dataTables.responsive.min.js"></script>
+<script src="~/AdminLTE-3.2.0/plugins/datatables-responsive/js/responsive.bootstrap4.min.js"></script>
+<script src="~/AdminLTE-3.2.0/plugins/datatables-buttons/js/dataTables.buttons.min.js"></script>
+<script src="~/AdminLTE-3.2.0/plugins/datatables-buttons/js/buttons.bootstrap4.min.js"></script>
+<script src="~/AdminLTE-3.2.0/plugins/jszip/jszip.min.js"></script>
+<script src="~/AdminLTE-3.2.0/plugins/pdfmake/pdfmake.min.js"></script>
+<script src="~/AdminLTE-3.2.0/plugins/pdfmake/vfs_fonts.js"></script>
+<script src="~/AdminLTE-3.2.0/plugins/datatables-buttons/js/buttons.html5.min.js"></script>
+<script src="~/AdminLTE-3.2.0/plugins/datatables-buttons/js/buttons.print.min.js"></script>
+<script src="~/AdminLTE-3.2.0/plugins/datatables-buttons/js/buttons.colVis.min.js"></script>
+<!-- Select2 -->
+<script src="~/select2-4.1.0-rc.0/dist/js/select2.min.js"></script>
+<!-- Toast -->
+<script src="~/Toast/toastr.js"></script>
+
+<script type="text/javascript">
+    $(function () {
+        $("#tabelView").DataTable({
+            "responsive": true,
+            "paging": true,
+            "lengthChange": true,
+            "searching": true,
+            "ordering": true,
+            "info": true,
+            "autoWidth": true,
+        });
+    });
+
+    function DeletedData(v_data) {
+        let text = "Apakah anda benar-benar ingin menghapus data ini?";
+
+        if (confirm(text) == true) {
+            var xhr = new XMLHttpRequest();
+            xhr.withCredentials = true;
+
+            xhr.addEventListener("readystatechange", function () {
+                if (this.readyState === 4) {
+                    console.log(this.responseText);
+                }
+            });
+
+            xhr.open("DELETE", "@Url.Action("DeletedData", "UnitKerja", null,null)");
+            xhr.setRequestHeader("idUnit", v_data);
+
+            xhr.onload = function () {
+                const obj = JSON.parse(this.responseText);
+
+                if (obj.metadata.code == 200) {
+                    ShowToast('success', obj.metadata.message, 'Operation success');
+                    loadORrefresh();
+                } else if (obj.metadata.code == 201) {
+                    ShowToast('error', obj.metadata.message, 'Operation error');
+                } else if (obj.metadata.code == 202) {
+                    ShowToast('warning', obj.metadata.message, 'Operation failed');
+                }
+            }
+
+            xhr.send();
+        }
+    }
+</script>

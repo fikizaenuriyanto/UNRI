@@ -1,0 +1,95 @@
+﻿@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@{
+    Layout = "~/Views/Shared/_Login_Layout.cshtml";
+}
+<div class="form-group mb-3">
+    <label class="label">E-mail</label>
+    <input type="email" class="form-control" id="username" name="username"
+           placeholder="E-mail pengguna aplikasi" required />
+</div>
+<div class="form-group mb-3">
+    <label class="label">Password</label>
+    <input type="password" class="form-control" id="password" name="password"
+           placeholder="Password" required />
+</div>
+<div class="form-group">
+    <button type="submit" class="form-control btn btn-primary rounded submit px-3"
+            onclick="validateForm()">
+        Sign In
+    </button>
+</div>
+
+<script type="text/javascript">
+    function ShowToast(toastType, toastMessage, toastTitle) {
+        toastr.clear();
+
+        toastr.options = {
+            closeButton: true,
+            progressBar: true,
+            onclick: null
+        };
+
+        toastr.options.showDuration = 300;
+        toastr.options.hideDuration = 1000;
+        toastr.options.timeOut = 5000;
+        toastr.options.extendedTimeOut = 1000;
+        toastr.options.showEasing = 'swing';
+        toastr.options.hideEasing = 'linear';
+        toastr.options.showMethod = 'fadeIn';
+        toastr.options.hideMethod = 'fadeOut';
+
+        var $toast = toastr[toastType](toastMessage, toastTitle); // Wire up an event handler to a button in the toast, if it exists
+        $toastlast = $toast;
+    }
+
+    function validateForm() {
+        if (document.getElementById("username").value == "") {
+            alert("E-mail pengguna masih Kosong");
+            document.getElementById("username").focus();
+            return false;
+        }
+        if (document.getElementById("password").value == "") {
+            alert("Password masih Kosong");
+            document.getElementById("password").focus();
+            return false;
+        }
+        CekLogin();
+    }
+
+    function CekLogin(){
+        var xhr = new XMLHttpRequest();
+        xhr.withCredentials = true;
+
+        xhr.addEventListener("readystatechange", function () {
+            if (this.readyState === 4) {
+                console.log(this.responseText);
+            }
+        });
+
+        xhr.open("GET", "../../Login/getLogin");
+        xhr.setRequestHeader("_email", document.getElementById("username").value);
+        xhr.setRequestHeader("_password", document.getElementById("password").value);
+
+        xhr.onload = function () {
+            const obj = JSON.parse(this.responseText);
+
+            if (obj.metadata.code == 200) {
+
+                if (obj.response.data.length > 0) {
+                    for (i = 0; i <= obj.response.data.length - 1; i++) {
+                        ShowToast('success', 'Login berhasil', 'Operation success');
+                        location.replace("../../Beranda");
+                    }
+                } else {
+                    ShowToast('warning', 'Username dan password salah', 'Login failed');
+                }
+            } else {
+                ShowToast('error', obj.metadata.message, 'Operation error');
+            }
+        }
+
+        xhr.send();
+    }
+</script>
